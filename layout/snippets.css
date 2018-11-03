@@ -1,0 +1,123 @@
+/* ---------- FLEX ---------- */
+
+/*
+<div class="container">
+  <div class="red">
+    <p>red</p>
+  </div>
+  <div class="column-wrapper">
+    <div class="blue">
+      <p>blue</p>
+    </div>
+    <div class="yellow">
+      <p>yellow</p>
+    </div>
+  </div>
+  <div class="green">
+    <p>green</p>
+  </div>
+</div>
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin: 150px auto 0 auto;
+  border: 2px solid black;
+}
+.container .red, .container .blue, .container .yellow, .container .green {
+  heigth: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.column-wrapper {
+  flex: 0 1 50%;
+}
+
+.red {
+  background-color: #ed4040;
+  flex: 0 1 25%;
+}
+
+.blue {
+  background-color: #4286f4;
+  height: 50%;
+}
+
+.yellow {
+  background-color: #ffef68;
+  height: 50%;
+}
+
+.blue, .yellow {
+  height: 50%;
+}
+
+.green {
+  background-color: #99e265;
+  flex: 0 1 25%;
+}
+
+/* ------------ GRID -----------*/
+
+/*
+<div class="container">
+  <div class="red">
+    <p>red</p>
+  </div>
+  <div class="blue">
+    <p>blue</p>
+  </div>
+  <div class="yellow">
+    <p>yellow</p>
+  </div>
+  <div class="green">
+    <p>green</p>
+  </div>
+</div>
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "red blue green" "red yellow green";
+  width: 500px;
+  height: 300px;
+  margin: 150px auto 0 auto;
+  border: 2px solid black;
+}
+.container .red, .container .blue, .container .yellow, .container .green {
+  heigth: 100%;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.red {
+  background-color: #ed4040;
+  grid-area: red;
+}
+
+.blue {
+  background-color: #4286f4;
+  grid-area: blue;
+}
+
+.yellow {
+  background-color: #ffef68;
+  grid-area: yellow;
+}
+
+.green {
+  background-color: #99e265;
+  grid-area: green;
+}
