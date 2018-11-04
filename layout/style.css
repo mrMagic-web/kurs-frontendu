@@ -5,10 +5,14 @@
 }
 
 .container {
+    font-size: 30px;
+    color: white;
   width: 80%;
   height: 80vh;
   margin: 50px auto 0 auto;
   border: 2px solid black;
+    display: flex;
+    flex-direction: row;
 }
 .container .red, 
 .container .blue, 
@@ -18,6 +22,20 @@
   width: 100%;
   font-size: 25px;
   text-align: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue, .yellow {
+    flex-basis: 50%;
+}
+.central {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.red, .green {
+    flex-basis: 25%;
 }
 
 .red {
@@ -34,4 +52,12 @@
 
 .green {
   background-color: #99e265;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+            font-size: 15px;
+    color: gray;
+    }
 }
