@@ -1,0 +1,61 @@
+body {
+  overflow: hidden;
+}
+.container {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+}
+.rocket {
+  position: absolute;
+  bottom: 0;
+}
+.rocket-1 {
+  left: 0;
+  animation: woosh 3s linear infinite;
+}
+.rocket-2 {
+  animation: woosh 4s 1s linear infinite;
+}
+.rocket-3 {
+  right: 0;
+  animation: woosh 2.4s 3s linear infinite;
+}
+
+@keyframes woosh {
+  from {
+    transform: translateY(250px);
+    transform: translateX(-10px);
+  }
+  4% {
+    transform: translateX(10px);
+  }
+  7% {
+    transform: translateX(-8px);
+  }
+  9% {
+    transform: translateX(6px);
+  }
+  16% {
+    transform: translateX(-8px);
+  }
+  8% {
+    transform: translateX(12px);
+  }
+  9% {
+    transform: translateX(-3px);
+  }
+  10% {
+    transform: translateX(9px);
+  }
+  12% {
+    transform: translateX(-3px);
+  }
+  13% {
+    transform: translateX(1);
+  }
+  to {
+    transform: translateX(0);
+    transform: translateY(-100vh);
+  }
+}
