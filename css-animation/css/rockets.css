@@ -36,23 +36,23 @@ body {
   9% {
     transform: translateX(6px);
   }
-  16% {
+  11% {
     transform: translateX(-8px);
   }
-  8% {
+  15% {
     transform: translateX(12px);
   }
-  9% {
+  21% {
     transform: translateX(-3px);
   }
-  10% {
+  27% {
     transform: translateX(9px);
   }
-  12% {
+  33% {
     transform: translateX(-3px);
   }
-  13% {
-    transform: translateX(1);
+  39% {
+    transform: translateX(1px);
   }
   to {
     transform: translateX(0);
