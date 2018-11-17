@@ -1,0 +1,253 @@
+/* ------------- ROBOT ----------- */
+
+.container {
+  display: flex;
+  height: calc(100vh - 16px);
+  position: relative;
+}
+.robot {
+  max-width: 20rem;
+  transform: translateX(200px) skew(20deg) scale(0.5);
+  animation-name: animowany_robot;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-direction: alternate;
+
+  animation-timing-function: cubic-bezier(0.69, 0, 0.28, 1);
+}
+@keyframes animowany_robot {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+@keyframes animowany_robot2 {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*  ------------ BUTTON ----------------- */
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ------------- ROCKET ----------------- */
+
+.rocket-1 {
+  left: 0;
+  animation: woosh 3s linear infinite;
+}
+.rocket-2 {
+  animation: woosh 4s 1s linear infinite;
+}
+.rocket-3 {
+  right: 0;
+  animation: woosh 2.4s 3s linear infinite;
+}
+
+@keyframes woosh {
+  from {
+    transform: translateY(250px);
+    transform: translateX(-10px);
+  }
+  4% {
+    transform: translateX(10px);
+  }
+  7% {
+    transform: translateX(-8px);
+  }
+  9% {
+    transform: translateX(6px);
+  }
+  11% {
+    transform: translateX(-8px);
+  }
+  15% {
+    transform: translateX(12px);
+  }
+  21% {
+    transform: translateX(-3px);
+  }
+  27% {
+    transform: translateX(9px);
+  }
+  33% {
+    transform: translateX(-3px);
+  }
+  39% {
+    transform: translateX(1px);
+  }
+  to {
+    transform: translateX(0);
+    transform: translateY(-100vh);
+  }
+}
+
+/* ----------- LOGIN PAGE ----------- */
+
+button:hover {
+  background-color: #fb5362;
+}
+
+section {
+  animation: slideIn 0.8s linear, fadeIn 0.2s ease-in;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(400px);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateY(10px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ----- COG ----- */
+
+.cog {
+  width: 80px;
+  animation: spin 1s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.cog:hover {
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* -------- ANIMATED TEXT ---------  */
+
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+
+span:nth-child(2) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both;
+}
+
+span:nth-child(3) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
+}
+
+span:nth-child(4) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both;
+}
+
+span:nth-child(5) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
+}
+
+span:nth-child(6) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+}
+
+span:nth-child(7) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+}
+
+span:nth-child(8) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+}
+
+span:nth-child(9) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+}
+
+span:nth-child(10) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
+}
+span:nth-child(11) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both;
+}
+span:nth-child(12) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
+}
+span:nth-child(13) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both;
+}
+span:nth-child(14) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0s both;
+}
+
+@keyframes flipUp {
+  from {
+    transform: scale(0.2) rotateX(90deg);
+  }
+  90% {
+    tranform: scale(2.5) rotateX(-22deg);
+  }
+  95% {
+    tranform: scale(0.2) rotateX(24deg);
+  }
+  to {
+    tranform: scale(1) rotateX(0deg);
+  }
+}
+
+/* ----------kolejna animacja ------------*/
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both,
+    flipDown 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards;
+}
+@keyframes flipDown {
+  to {
+    transform: rotateX(-180deg);
+  }
+}
