@@ -1,0 +1,91 @@
+/* ------------- ROBOT ----------- */
+/* 
+.container {
+  display: flex;
+  height: calc(100vh - 16px);
+  position: relative;
+}
+.robot {
+  max-width: 20rem;
+  transform: translateX(200px) skew(20deg) scale(0.5);
+  animation-name: animowany_robot;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  
+  animation-timing-function: cubic-bezier(0.69, 0, 0.28, 1);
+}*/
+
+/* @keyframes animowany_robot {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+@keyframes animowany_robot2 {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+/* ------------- ROCKET ----------------- */
+
+/* .rocket-1 {
+  left: 0;
+  animation: woosh 3s linear infinite;
+}
+.rocket-2 {
+  animation: woosh 4s 1s linear infinite;
+}
+.rocket-3 {
+  right: 0;
+  animation: woosh 2.4s 3s linear infinite;
+}
+
+@keyframes woosh {
+  from {
+    transform: translateY(250px);
+    transform: translateX(-10px);
+  }
+  4% {
+    transform: translateX(10px);
+  }
+  7% {
+    transform: translateX(-8px);
+  }
+  9% {
+    transform: translateX(6px);
+  }
+  11% {
+    transform: translateX(-8px);
+  }
+  15% {
+    transform: translateX(12px);
+  }
+  21% {
+    transform: translateX(-3px);
+  }
+  27% {
+    transform: translateX(9px);
+  }
+  33% {
+    transform: translateX(-3px);
+  }
+  39% {
+    transform: translateX(1px);
+  }
+  to {
+    transform: translateX(0);
+    transform: translateY(-100vh);
+  }
+} */

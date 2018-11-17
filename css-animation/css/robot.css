@@ -4,16 +4,7 @@
   position: relative;
 }
 .robot {
-  transform: translateX(200px) skew(20deg) scale(0.5);
   max-width: 20rem;
-  animation-name: animowany_robot;
-  animation-duration: 3s;
-  animation-iteration-count: 10;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-  animation-direction: alternate;
-  /* animation-timing-function: ease-in-out; */
-  animation-timing-function: cubic-bezier(0.69, 0, 0.28, 1);
 }
 
 @keyframes animowany_robot {
