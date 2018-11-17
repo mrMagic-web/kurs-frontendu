@@ -1,0 +1,22 @@
+body {
+  overflow: hidden;
+  background-color: aliceblue;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  background-color: #a83c1b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
