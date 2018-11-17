@@ -1,0 +1,19 @@
+body {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 5rem;
+  background: #2c333a;
+}
+
+div {
+  width: 80%;
+  margin: 4rem auto;
+  text-align: center;
+  perspective: 800px;
+}
+
+span {
+  display: inline-block;
+  margin-left: -20px;
+  color: #77c6bc;
+  transform-origin: 50% 70%;
+}
