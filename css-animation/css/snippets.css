@@ -1,5 +1,5 @@
 /* ------------- ROBOT ----------- */
-/* 
+
 .container {
   display: flex;
   height: calc(100vh - 16px);
@@ -14,11 +14,10 @@
   animation-fill-mode: forwards;
   animation-delay: 2s;
   animation-direction: alternate;
-  
-  animation-timing-function: cubic-bezier(0.69, 0, 0.28, 1);
-}*/
 
-/* @keyframes animowany_robot {
+  animation-timing-function: cubic-bezier(0.69, 0, 0.28, 1);
+}
+@keyframes animowany_robot {
   from {
     transform: translateX(0);
   }
@@ -36,11 +35,11 @@
   100% {
     transform: translateX(0);
   }
-} */
+}
 
 /* ------------- ROCKET ----------------- */
 
-/* .rocket-1 {
+.rocket-1 {
   left: 0;
   animation: woosh 3s linear infinite;
 }
@@ -88,4 +87,4 @@
     transform: translateX(0);
     transform: translateY(-100vh);
   }
-} */
+}
