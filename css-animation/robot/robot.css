@@ -6,23 +6,3 @@
 .robot {
   max-width: 20rem;
 }
-
-@keyframes animowany_robot {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(800px);
-  }
-}
-@keyframes animowany_robot2 {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(800px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
