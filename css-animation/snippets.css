@@ -115,3 +115,41 @@
     transform: translateY(-100vh);
   }
 }
+
+/* ----------- LOGIN PAGE ----------- */
+
+button:hover {
+  background-color: #fb5362;
+}
+
+section {
+  animation: slideIn 0.8s linear, fadeIn 0.2s ease-in;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(400px);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateY(10px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
