@@ -6,4 +6,16 @@ body {
 
 .cog {
   width: 80px;
+  animation: spin 1s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.cog:hover {
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
 }

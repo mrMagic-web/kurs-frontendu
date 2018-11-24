@@ -5,4 +5,20 @@
 }
 .robot {
   max-width: 20rem;
+  animation: ruch_w_prawo 2s 1s infinite alternate
+    cubic-bezier(0.45, 0.12, 0.64, 0.88);
+}
+@keyframes ruch_w_prawo {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  4% {
+    transform: translateX(30px) scale(1.2);
+  }
+  6% {
+    transform: translateX(30px) scale(1);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
 }

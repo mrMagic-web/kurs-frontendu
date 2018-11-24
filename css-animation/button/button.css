@@ -16,7 +16,13 @@ body {
   font-size: 20px;
   padding: 20px;
   width: 200px;
-  transition: all 0.5s;
+  transition: background-color 0.5s 0.4s ease-in-out, transform 0.4s,
+    color 0.4s 0.2s;
   cursor: pointer;
   margin: 5px;
+}
+.button:hover {
+  background-color: blueviolet;
+  color: black;
+  transform: scale(1.4) rotateX(-30deg);
 }

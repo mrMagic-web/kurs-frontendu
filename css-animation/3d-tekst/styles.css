@@ -17,3 +17,77 @@ span {
   color: #77c6bc;
   transform-origin: 50% 70%;
 }
+
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both,
+    flipDown 0.5s ease-in 2s forwards;
+}
+
+span:nth-child(2) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both;
+}
+
+span:nth-child(3) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
+}
+
+span:nth-child(4) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both;
+}
+
+span:nth-child(5) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
+}
+
+span:nth-child(6) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+}
+
+span:nth-child(7) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+}
+
+span:nth-child(8) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+}
+
+span:nth-child(9) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+}
+
+span:nth-child(10) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
+}
+span:nth-child(11) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both;
+}
+span:nth-child(12) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
+}
+span:nth-child(13) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both;
+}
+span:nth-child(14) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0s both;
+}
+
+@keyframes flipUp {
+  from {
+    transform: scale(0.2) rotateX(90deg);
+  }
+  90% {
+    tranform: scale(2.5) rotateX(-22deg);
+  }
+  95% {
+    tranform: scale(0.2) rotateX(24deg);
+  }
+  to {
+    tranform: scale(1) rotateX(0deg);
+  }
+}
+
+@keyframes flipDown {
+  to {
+    transform: rotateX(-180deg);
+  }
+}
