@@ -1,0 +1,27 @@
+html {
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: -webkit-fill-available;
+}
+
+section {
+    flex: 1 1;
+}
+
+section h3 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+.roboty {
+    background-color: lightblue;
+}
+
+.robotki {
+    background-color: lightpink;
+}
