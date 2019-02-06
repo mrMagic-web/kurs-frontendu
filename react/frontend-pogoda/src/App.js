@@ -1,28 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			age: 24,
+			contacts: []
+		};
+	}
+	componentDidMount() {
+		fetch("https://randomuser.me/api/?format=json&results=10")
+			.then(res => res.json())
+			.then(json => this.setState({ contacts: json.results }));
+	}
+	urodziny = () => {
+		this.setState({ age: this.state.age + 1 });
+	};
+
+	render() {
+		return (
+			<div className="App">
+				<div>
+					{this.state.age}
+					<header className="App-header" />
+					{this.state.contacts.map(user => (
+						<Contact key={user.cell} user={user} />
+					))}
+				</div>
+				<Footer urodziny={this.urodziny} />
+			</div>
+		);
+	}
 }
 
 export default App;
