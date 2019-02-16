@@ -7,6 +7,9 @@
 if (isLoading) {
 	return <Loader />;
 }
+if (isWaiting) {
+	return <Waiter />;
+}
 return (
 	<div>
 		<h1>Hello World</h1>

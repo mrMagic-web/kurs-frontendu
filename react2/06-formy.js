@@ -8,9 +8,6 @@ class NameForm extends React.Component {
 		super(props);
 		// ustalamy wartość początkową
 		this.state = { value: "" };
-		// bindujemy nasze funkcje
-		this.zmienValue = this.zmienValue.bind(this);
-		this.zapiszZmiany = this.zapiszZmiany.bind(this);
 	}
 	// metoda pozwlająca na zmianę wartości w stanie
 	zmienValue(event) {
