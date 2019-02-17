@@ -1,0 +1,58 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "567e3e257f2cc8fba2c12bf691c9f2d8",
+      "css": "moon",
+      "code": 61830,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "aa035df0908c4665c269b7b09a5596f3",
+      "css": "sun",
+      "code": 61829,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "83458acd9f38d03ec0226ce82a83c0f4",
+      "css": "tint",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0bda4bc779d4c32623dec2e43bd67ee8",
+      "css": "gauge",
+      "code": 61668,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d7ef51ac5d8223e1c4e6551b833a6b44",
+      "css": "thermometer-3",
+      "code": 62152,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bc89c320cf57f6c88f1ae7248e12a28f",
+      "css": "thermometer-0",
+      "code": 62155,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5f3a0ebf2d13f60ec7ed76eb41ba9bb2",
+      "css": "air",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "0cd2582b8c93719d066ee0affd02ac78",
+      "css": "sort-alt-up",
+      "code": 61792,
+      "src": "fontawesome"
+    }
+  ]
+}

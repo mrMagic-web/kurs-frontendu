@@ -1,0 +1,237 @@
+.body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+p {
+    line-height: 1px;
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.linia {
+    border-bottom: 1px white solid;
+    padding-bottom: 17px;
+}
+
+.App {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 320px;
+    height: 480px;
+    background-image: url("Skyshot.jpg");
+    background-size: cover;
+    font-size: 10px;
+    color: black;
+    border: 2px black solid;
+}
+
+.Nav {
+    display: flex;
+    align-content: center;
+    border-radius: 30%;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.wpis {
+    background-color: rgb(4, 22, 61);
+    color: white;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 4px;
+    margin-bottom: 1px;
+}
+
+.przycisk {
+    margin-top: 3px;
+    border: 0;
+    background-color: rgb(4, 22, 61);
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.przycisk:hover {
+    background-color: rgb(30, 47, 82);
+}
+
+.nav-bar {
+    width: 280px;
+    overflow: hidden;
+    transform: translateY(-100%);
+    background-color: rgb(4, 22, 61);
+    transition: 0.5s transform ease-in-out;
+}
+
+.lupa {
+    background-color: rgb(4, 22, 61);
+    color: white;
+    border: 0;
+    width: 40px;
+    opacity: 0.8;
+    position: relative;
+}
+
+.lupa:hover {
+    cursor: pointer;
+}
+
+.lupa:focus~.nav-bar,
+.nav-bar:hover {
+    transform: translateY(0);
+}
+
+.result {
+    padding-top: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 220px;
+    color: white;
+    font-size: 20px;
+    position: initial;
+}
+
+.days {
+    border-top: 2px white solid;
+    width: 300px;
+    height: 218px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 9px;
+    padding-right: 11px;
+    background-color: rgba(12, 122, 185, 0.87);
+    opacity: 0.9999;
+    color: white;
+    font-size: 15px;
+}
+
+.days img {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.day {
+    padding: 6px;
+    margin: 2px;
+    border-right: 2px white solid;
+}
+
+@keyframes animacja {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    30% {
+        transform: translateX(40px) translateY(-40px) scale(3);
+    }
+    70% {
+        transform: translateX(40px) translateY(-40px) scale(3);
+    }
+    100% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+}
+
+.icone.lupa {
+    margin-top: 0;
+    width: 14px;
+    height: 14px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icone.lupa:after {
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    content: "";
+    top: 20%;
+    left: 20%;
+    transform: rotate(45deg);
+    transform-origin: -5px 20px;
+}
+
+.anim {
+    position: absolute;
+    top: 0;
+    transform: translateX(270px);
+    animation-name: animacja;
+    animation-direction: 3s;
+}
+
+.miasto {
+    font-size: 40px;
+}
+
+.miasto::first-letter {
+    text-transform: uppercase;
+}
+
+.W {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 50px;
+}
+
+.rozwi {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 63, 99, 0.87);
+    padding: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
+    transform: translateX(8px) translateY(-370px);
+    border-radius: 10%;
+    line-height: 1.5;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+    text-align: left;
+    width: 264px;
+}
+
+.wiecej {
+    color: black;
+    border: 0;
+    background-color: transparent;
+    border-radius: 40%;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 1px 7px;
+    cursor: pointer;
+}
+
+.wiecej:focus~.rozwi {
+    opacity: 1;
+    transform: translateY(0px) translateX(8px);
+}
+
+.obr {
+    background-color: rgba(6, 54, 117, 0.87);
+    border-radius: 40%;
+}
+
+.loading {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 33px;
+    color: wthite;
+}

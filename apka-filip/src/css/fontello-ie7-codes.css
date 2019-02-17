@@ -1,0 +1,9 @@
+
+.icon-tint { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-air { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-gauge { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e4;&nbsp;'); }
+.icon-sort-alt-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf160;&nbsp;'); }
+.icon-sun { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf185;&nbsp;'); }
+.icon-moon { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf186;&nbsp;'); }
+.icon-thermometer-3 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf2c8;&nbsp;'); }
+.icon-thermometer-0 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf2cb;&nbsp;'); }
