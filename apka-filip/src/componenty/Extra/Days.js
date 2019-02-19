@@ -5,7 +5,7 @@ const Days = props => {
 		? props.weather.list
 				.filter(e => {
 					const hour = new Date(e.dt_txt).getHours();
-					return hour === 15;
+					return hour === 12;
 				})
 				.slice(0, 3)
 				.map(w => (
